@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+╔══════════════════════════════════════════════════════════╗
+║  FILE: about.html                                       ║
+║  About Page - Story, Mission, Team & Values             ║
+╚══════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about SavoryGH - our story, mission, and passion for authentic Ghanaian cuisine.">
+    <title>About Us - SavoryGH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo"><div class="logo-icon"><i class="fas fa-utensils"></i></div><div class="logo-text"><span class="logo-name">Savory<span class="logo-accent">GH</span></span><span class="logo-tagline">Taste of Ghana</span></div></a>
+            <nav class="header__nav" id="headerNav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="menu.html" class="nav__link">Menu</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link active">About</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+                <a href="cart.html" class="header__cart-btn mobile-cart" aria-label="View Cart"><i class="fas fa-shopping-bag"></i><span class="cart-badge" id="cartBadgeMobile">0</span></a>
+            </nav>
+            <div class="header__actions">
+                <a href="cart.html" class="header__cart-btn desktop-cart" aria-label="View Cart"><i class="fas fa-shopping-bag"></i><span class="cart-badge" id="cartBadge">0</span></a>
+                <button class="header__menu-toggle" id="menuToggle" aria-label="Toggle Menu"><span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <section class="page-banner">
+            <div class="page-banner__bg" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80');"></div>
+            <div class="page-banner__overlay"></div>
+            <div class="page-banner__content"><h1>About <span class="text-accent">Us</span></h1><p>Our story & passion for Ghanaian cuisine</p></div>
+        </section>
+
+        <section class="about-story section-padding">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="https://ghanaianfood.com/assets/ghanaian_food_feast_overhead-_jjEa520.png" alt="SavoryGH Kitchen" loading="lazy">
+                        <div class="about-image__badge"><i class="fas fa-star"></i> Since 2020</div>
+                    </div>
+                    <div class="about-content">
+                        <span class="section-badge">Our Story</span>
+                        <h2>Bringing Ghana's <span class="text-accent">Rich Flavors</span> to Your Table</h2>
+                        <p>SavoryGH was born from a deep love for authentic Ghanaian cuisine. What started as a small kitchen in Accra has grown into one of the most trusted food delivery services in the region.</p>
+                        <p>We believe that great food brings people together. Every dish we prepare carries the warmth of Ghanaian hospitality — using fresh, locally-sourced ingredients and time-honored recipes passed down through generations.</p>
+                        <div class="about-values">
+                            <div class="value-item"><i class="fas fa-check-circle"></i> Fresh Ingredients Daily</div>
+                            <div class="value-item"><i class="fas fa-check-circle"></i> Traditional Recipes</div>
+                            <div class="value-item"><i class="fas fa-check-circle"></i> Fast & Reliable Delivery</div>
+                            <div class="value-item"><i class="fas fa-check-circle"></i> Hygienic Preparation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission section-padding bg-warm">
+            <div class="container">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <div class="mission-icon"><i class="fas fa-bullseye"></i></div>
+                        <h3>Our Mission</h3>
+                        <p>To make authentic Ghanaian food accessible to everyone — delivering quality, taste, and tradition with every order.</p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="mission-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Our Vision</h3>
+                        <p>To be Ghana's most loved food delivery brand, celebrating our culinary heritage while embracing innovation.</p>
+                    </div>
+                    <div class="mission-card">
+                        <div class="mission-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Our Values</h3>
+                        <p>Quality, integrity, customer satisfaction, and a genuine passion for sharing the joy of Ghanaian food.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer__top"><div class="container"><div class="footer__grid">
+            <div class="footer__col footer__col--brand"><a href="index.html" class="footer__logo"><i class="fas fa-utensils"></i> Savory<span class="logo-accent">GH</span></a><p>Bringing the authentic taste of Ghana to your doorstep.</p><div class="footer__social"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div>
+            <div class="footer__col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="cart.html">My Cart</a></li></ul></div>
+            <div class="footer__col"><h4>Contact Info</h4><ul class="footer__contact"><li><i class="fas fa-map-marker-alt"></i> Accra, Ghana</li><li><i class="fab fa-whatsapp"></i>+233 0208072877</li><li><i class="fab fa-whatsapp"></i>+91   7082819336</li><li><i class="fas fa-envelope"></i> hello@savorygh.com</li></ul></div>
+            <div class="footer__col"><h4>Business Hours</h4><ul class="footer__hours"><li><span>Mon - Fri:</span> 8:00 AM - 10:00 PM</li><li><span>Saturday:</span> 9:00 AM - 11:00 PM</li><li><span>Sunday:</span> 10:00 AM - 8:00 PM</li></ul></div>
+        </div></div></div>
+        <div class="footer__bottom"><div class="container"><p>&copy; 2025 SavoryGH. All rights reserved. | Made with in Ghana</p></div></div>
+    </footer>
+    <div class="toast-container" id="toastContainer"></div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="app.js"></script>
+</body>
+</html>

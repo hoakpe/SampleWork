@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+╔══════════════════════════════════════════════════════════╗
+║  FILE: contact.html                                     ║
+║  Contact Page with Form, WhatsApp & Email Integration   ║
+╚══════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with SavoryGH - contact us via WhatsApp, email, or our online form.">
+    <title>Contact Us - SavoryGH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo"><div class="logo-icon"><i class="fas fa-utensils"></i></div><div class="logo-text"><span class="logo-name">Savory<span class="logo-accent">GH</span></span><span class="logo-tagline">Taste of Ghana</span></div></a>
+            <nav class="header__nav" id="headerNav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="menu.html" class="nav__link">Menu</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link active">Contact</a></li>
+                </ul>
+                <a href="cart.html" class="header__cart-btn mobile-cart" aria-label="View Cart"><i class="fas fa-shopping-bag"></i><span class="cart-badge" id="cartBadgeMobile">0</span></a>
+            </nav>
+            <div class="header__actions">
+                <a href="cart.html" class="header__cart-btn desktop-cart" aria-label="View Cart"><i class="fas fa-shopping-bag"></i><span class="cart-badge" id="cartBadge">0</span></a>
+                <button class="header__menu-toggle" id="menuToggle" aria-label="Toggle Menu"><span class="menu-bar"></span><span class="menu-bar"></span><span class="menu-bar"></span></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <section class="page-banner">
+            <div class="page-banner__bg" style="background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&q=80');"></div>
+            <div class="page-banner__overlay"></div>
+            <div class="page-banner__content"><h1>Contact <span class="text-accent">Us</span></h1><p>We'd love to hear from you</p></div>
+        </section>
+
+        <section class="contact-page section-padding">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you promptly.</p>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactName">Full Name *</label>
+                                    <input type="text" id="contactName" placeholder="Your full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactEmail">Email Address *</label>
+                                    <input type="email" id="contactEmail" placeholder="your@email.com" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactPhone">Phone Number</label>
+                                    <input type="tel" id="contactPhone" placeholder="e.g. 0501234567">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactSubject">Subject *</label>
+                                    <input type="text" id="contactSubject" placeholder="How can we help?" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Message *</label>
+                                <textarea id="contactMessage" rows="5" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="submit" class="btn btn--email btn--lg" id="contactEmailBtn">
+                                    <i class="fas fa-envelope"></i> Send via Email
+                                </button>
+                                <button type="button" class="btn btn--whatsapp btn--lg" id="contactWhatsAppBtn">
+                                    <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info Sidebar -->
+                    <div class="contact-info-sidebar">
+                        <div class="contact-info-card">
+                            <h3><i class="fas fa-address-card"></i> Reach Us</h3>
+                            <ul>
+                                <li><i class="fab fa-whatsapp"></i><strong>WhatsApp Line 1:</strong><br><a href="https://wa.me/+233 0208072877">+233 0208072877</a></li>
+                                <li><i class="fab fa-whatsapp"></i><strong>WhatsApp Line 2:</strong><br><a href="https://wa.me/+91   7082819336">+91   7082819336</a></li>
+                                <li><i class="fas fa-envelope"></i><strong>Email:</strong><br><a href="mailto:hello@savorygh.com">hello@savorygh.com</a></li>
+                                <li><i class="fas fa-map-marker-alt"></i><strong>Location:</strong><br>Accra, Ghana</li>
+                            </ul>
+                        </div>
+                        <div class="contact-info-card">
+                            <h3><i class="fas fa-clock"></i> Business Hours</h3>
+                            <ul class="contact-hours">
+                                <li><span>Monday - Friday:</span> 8:00 AM - 10:00 PM</li>
+                                <li><span>Saturday:</span> 9:00 AM - 11:00 PM</li>
+                                <li><span>Sunday:</span> 10:00 AM - 8:00 PM</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer__top"><div class="container"><div class="footer__grid">
+            <div class="footer__col footer__col--brand"><a href="index.html" class="footer__logo"><i class="fas fa-utensils"></i> Savory<span class="logo-accent">GH</span></a><p>Bringing the authentic taste of Ghana to your doorstep.</p><div class="footer__social"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a><a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div></div>
+            <div class="footer__col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="cart.html">My Cart</a></li></ul></div>
+            <div class="footer__col"><h4>Contact Info</h4><ul class="footer__contact"><li><i class="fas fa-map-marker-alt"></i> Accra, Ghana</li><li><i class="fab fa-whatsapp"></i> +233 0208072877</li><li><i class="fab fa-whatsapp"></i>+91   7082819336</li><li><i class="fas fa-envelope"></i> hello@savorygh.com</li></ul></div>
+            <div class="footer__col"><h4>Business Hours</h4><ul class="footer__hours"><li><span>Mon - Fri:</span> 8:00 AM - 10:00 PM</li><li><span>Saturday:</span> 9:00 AM - 11:00 PM</li><li><span>Sunday:</span> 10:00 AM - 8:00 PM</li></ul></div>
+        </div></div></div>
+        <div class="footer__bottom"><div class="container"><p>&copy; 2025 SavoryGH. All rights reserved. | Made with in Ghana</p></div></div>
+    </footer>
+    <div class="toast-container" id="toastContainer"></div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="app.js"></script>
+</body>
+</html>
